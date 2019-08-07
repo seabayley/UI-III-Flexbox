@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 80vh;
+    margin: auto;
+    text-align: center;
+}
+
+#pageTop {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid darkslategrey;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#pageTop #nav {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 80vh;
+}
+
+#pageTop #nav #navbar {
+    display: flex;
+    width: 75%;
+    align-items: center;
+}
+
+#pageTop #nav #navbar a {
+    display: flex;
+    justify-content: space-between;
+    width: 18%;
+
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 14px;
+    font-style: bold;
+}
+
+#pageTop #topLogo {
+    display: flex;
+    max-width: 17%;
+}
+
+#pageTop #headerImg{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#services .serviceBox {
+    width: 48%;
+    background-color: lightgrey;
+    border: 1px solid darkslategrey;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+#services .serviceBox a {
+    display: block;
+    background-color: white;
+    border: solid 1px darkslategrey;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 40%;
+    padding: 7px 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    font-style: bold;
+    text-align: center;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid darkslategrey;
+    padding-top: 30px;    border-top: 2px solid darkslategrey;
+    margin-bottom: 80px;
+    text-align: left;
+}
+
+#footer .footerLeft {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+#footer .footerLeft .footerText {
+    margin-bottom: 20px;
+}
+
+#footer .footerLeft .footerList ul {
+    list-style-type: square;
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+#footer .footerLeft .footerList li {
+    margin: 10px 0px;
+}
+
+#footer .footerRight {
+    display: flex;
+    max-width: 48%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* for phones */
+    #services {
+      flex-direction: column;
+    }
+    #services .serviceBox {
+        width: 90%;
+        align-self: center;
+    }
+}
+
+
+#aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#aboutUs .employeeCard {
+    display: flex;
+    background-color: lightgrey;
+    border: 2px solid darkgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+#aboutUs h4 {
+    display: inline;
+}
